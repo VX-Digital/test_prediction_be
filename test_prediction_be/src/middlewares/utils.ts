@@ -101,7 +101,7 @@ export function onlyUniqueNameStatus(value) {
 }
 
 export const generateUniqueNumber = (prefix: string, number: number): string => {
-    const numberFormat: string = "000000"
+    const numberFormat = "000000"
     return prefix + numberFormat.substring(0, numberFormat.length - number.toString().length) + number
 };
 

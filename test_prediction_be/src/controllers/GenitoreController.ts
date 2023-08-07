@@ -10,7 +10,7 @@ class GenitoreController {
 
         
 
-        const numberPrefix: string = 'G';
+        const numberPrefix = 'G';
         const lastNumber: any = await getLastNumber(numberPrefix, res);
 
         let genitore = new Genitore();

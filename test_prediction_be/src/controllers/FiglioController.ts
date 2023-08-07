@@ -11,7 +11,7 @@ class FiglioController {
 
         
 
-        const numberPrefix: string = 'F';
+        const numberPrefix = 'F';
         const lastNumber: any = await getLastNumber(numberPrefix, res);
 
         let figlio = new Figlio();
