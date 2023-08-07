@@ -29,7 +29,7 @@ class DnsServerController {
             })
                 .then((res) => {
                     // Decrypt response if it's encrypted
-                    if (res.data && res.data.encrypted) {
+                    if ( res.data?.encrypted) {
                         const decryptedData = decryptServer(res.data.encrypted);
                         if (decryptedData.status === 'success') {
                             resolve(decryptedData);
