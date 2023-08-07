@@ -16,7 +16,7 @@ export async function getLastNumber(type: string, res: Response) {
 
         repository.find({
 
-            where: { codice: ILike("" + type + "%") }, order: { codice: 'DESC' }
+            where: { codice: ILike(String(type) + "%") }, order: { codice: 'DESC' }
 
         }).then((element => {
             const lastNumber = element[0].codice.split(type)[1]
